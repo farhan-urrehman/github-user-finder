@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #29267c, #171739);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.user-form {
+    max-width: 700px;
+    width: 100%;
+}
+
+.user-form input {
+    width: 50%;
+    display: block;
+    background-color: #1b1b1b;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+        position: sticky;
+}
+
+.user-form input::placeholder {
+    color: #bbb;
+    font-size: 0.8rem;
+}
+
+.user-form input:focus {
+    outline: none;
+    box-shadow: #3441a154 0 0 40px;
+}
+
+.card {
+    max-width: 800px;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: #3441a15a 0 0 40px;
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 6px solid #2a2a72;
+    height: 150px;
+    width: 150px;
+    box-shadow: #2a2a72 0 0 30px;
+    transition: all 0.5s ease;
+}
+
+
+.avatar:hover{
+    transform: translateY(10px);
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff4c;
+    line-height: 60px;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+    margin: 1.5rem 0rem;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #252525;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+#repo h4{
+    color: #fff;
+    border-bottom: 1px solid #ffffff45;
+    width: 108px;
+}
+
+
+nav{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+nav h4{
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+    transition: all 0.4s ease;
+}
+
+nav h4:hover{
+    transform: translateX(8px);
+    cursor: pointer;
+    word-spacing: 10px;
+    
+}
+
+
+nav img{
+    width: 80px;
+    transition: all 0.4s ease;
+}
+
+nav img:hover{
+    transform: translateY(8px);
+}
+
+
+
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        margin: 23rem 0;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+
+}
